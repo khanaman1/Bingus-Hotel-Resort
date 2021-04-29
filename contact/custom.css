@@ -1,0 +1,21 @@
+
+/* This section is for styling the body of the page */
+body {
+    font-family: 'New Times Roman', sans-serif;
+    color: yellow;
+}
+/*for styling the header1 */
+h1{
+    margin-bottom: 40px;
+}
+label {
+    color:black;
+}
+/* for stryling the send button */
+.btn-send {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+}
+
