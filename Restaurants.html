@@ -1,0 +1,94 @@
+<!-- 
+    Author:             Alex Mallett
+    Date:               4/3/2020
+    Assignment:         Project 1
+    Description:        HTML for the restaurants page 
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Bingus Hotels & Resorts | Restaurants</title>
+        <link href="Styles/restaurants.css" rel="stylesheet" />
+        <script src="Scripts/restaurants.js"></script>
+    </head>
+
+    <body>
+        <!-- Header and navigation bar of the restaurant page -->
+        <header>
+            <div class="wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="Images/Logo.jpg" alt="Bingus Hotels and Resorts Logo"/>
+                    </a>
+                </div>
+                <nav>
+                    <a href="Login.html">Login</a>
+                    <a href="Restaurants.html">Restaurants</a>
+                    <a href="Casino.html">Casino</a>
+                    <a href="RoomsPage.html">Hotel/Resort</a>
+                </nav>
+            </div>
+        </header>
+
+        <br><br><br><br><br><br><br>
+
+        <!-- List the restaurants in a grid format -->
+        <section id="content">
+            <h1>Restaurants</h1>
+            <div class="row1">
+                <!-- First restaurnat -->
+                <div class="restaurant" id="r1" onclick="r1()">
+                    <img src="Images/Bills.jpg" onmouseover="this.src='Images/PrimeRib.jpg';" onmouseout="this.src='Images/Bills.jpg';"/>
+                    <h3>Bill's Restaurant & Bar</h3>
+                </div>
+                <!-- Second restaurant -->
+                <div class="restaurant" id="r2" onclick="r2()">
+                    <img src="Images/Mirchi.png" onmouseover="this.src='Images/VegetableSamosa.jpg';" onmouseout="this.src='Images/Mirchi.png';"/>
+                    <h3>Mirchi</h3>
+                </div>
+                <!-- Third restaurnat -->
+                <div class="restaurant" id="r3" onclick="r3()">
+                    <img src="Images/Sunbean.jpg" onmouseover="this.src='Images/CroissantSandwich.jpg';" onmouseout="this.src='Images/Sunbean.jpg';"/>
+                    <h3>Sunbean Cafe & Restaurant</h3>
+                </div>
+            </div>
+            <!-- First restaurant's info -->
+            <div class="restaurantInfo" id="r1Info">
+                <h4>Bill's Restaurant & Bar</h4>
+                <p>Location: Down the south hall of the first floor<br>Featured Menu Items: Prime Rib, Fettuccine Alfredo, and Chicken Fried Chicken</p>
+            </div>
+            <!-- Second restaurant's info -->
+            <div class="restaurantInfo" id="r2Info">
+                <h4>Mirchi</h4>
+                <p>Location: Across the lobby on the first floor<br>Featured Menu Items: Vegetable Samosa, Chicken Curry, and Chicken Tikka Masala</p>
+            </div>
+            <!-- Third restaurant's info -->
+            <div class="restaurantInfo" id="r3Info">
+                <h4>Sunbean Cafe & Restaurant</h4>
+                <p>Location: On the first floor to the east of the casino floor<br>Featured Menu Items: Bacon Egg and Cheese Croissant Sandwich, Cappuccino, Meat and Cheese Omelet</p>
+            </div>
+            <div class="row2">
+                <!-- Fourth restaurant -->
+                <div class="restaurant" id="r4" onclick="r4()">
+                    <img src="Images/Tastyburgers.jpg" onmouseover="this.src='Images/BaconCheeseburger.jpg';" onmouseout="this.src='Images/Tastyburgers.jpg';"/>
+                    <h3>Tastyburgers</h3>
+                </div>
+            </div>
+            <!-- Fourth restaurant's info -->
+            <div class="restaurantInfo" id="r4Info">
+                <h4>Tastyburgers</h4>
+                <p>Location: Across the elevators on the second floor<br>Featured Menu Items: Bacon Cheeseburger, Old Fashion Burger, and Loaded Fries</p>
+            </div>
+        </section>
+
+        <!-- Footer of the restaurants page-->
+        <footer>
+            <ul>
+                <li><a href="About.html">About us</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+                <li><a href="Login.html">Login Here!</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>

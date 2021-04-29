@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<!--Aman Khan---->
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!--the following code contains the font type -->
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+/*for box */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 20%;
+  height:10%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+/* for card */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+/* for background */
+.about-section {
+  padding: 50px;
+  text-align: center;
+  Background-color:black;
+  color: #F3BB06;
+  
+}
+/* for container */
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* for Ttile */
+.title {
+  color: red;
+  Style: italic;
+}
+/* for button effect */
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: green;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+/* for button hover affect */
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+  
+  <!---This section includes about section of the home page--->
+<body>
+
+<div class="about-section">
+  <h1 >About Us </h1>
+  <p >At Bingus Hotels And Resorts, we provide the facility to book different hotels and resorts on customer request.  </p>
+  <p></p>
+</div>
+  
+<!---- this is a section for the contents of the group members--->
+ <!--This section is for Aman khan---> 
+<h2 style="text-align:center">Meet the Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="Images/aman.jpg" alt="Aman" style="width:220px;height:180px;">
+      <div class="container">
+        <h2>Aman Khan</h2>
+        <p style="font-size:20px"class="title">Lead Developper</p>
+        <p style="font-size:16px">&quot;If you don&apos;t like to read, you haven&apos;t found the right book -J.K. Rowling and the famous thoughts.&quot;</p>
+<p style="font-size:16px">
+        <p style="font-size:15px">msu-akhan4@mcneese.edu</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+<!--This section is for Alex Mallet-->
+  <div class="column">
+    <div class="card">
+      <img src="Images/alex.jpg" alt="Alex" style="width:220px;height:180px;">
+      <div class="container">
+        <h2>Alex Mallet</h2>
+        <p class="title">Project Manager</p>
+        <p style="font-size:16px">I am currently a junior computer science student at McNeese State University. So far, I've enjoyed all aspects of Computer Science that I've dealt with, so I haven't really decided on one thing to specialize in yet.</p>
+        <p style="font-size:15px">msu-amallet2@mcneese.edu</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+<!---this is for container items that has the information about the group members--->
+<div class="column">
+    <div class="card">
+      <img src="Images/Marcus Carnes.jpg" alt="Marcus" style="width:220px;height:180px;">
+      <div class="container">
+        <h2>Marcus Carnes</h2>
+        <p class="title">Lead Designer</p>
+        <p style="font-size:16px">I am a currently enrolled at Mcneese State University attending as a Computer Science student in his senior year.
+                                  My favorite pass time is playing video games and trying to figure out how the developers got the mechanics or the object to function in the playspace.
+                                  My goal in life is to work in the gaming industry and design unique experiences that will inspire others to pursue the same path.
+                                  There is no greater feeling than finding out you inspired others to pursue what they enjoy and encourage them to surpass you.
+        </p>
+        <p style="font-size:15px">msu-mcarnes@mcneese.edu</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+<!--for image section--->
+<div class="column">
+    <div class="card">
+      <img src="Images/Oluwaseyi.jpg" alt="Olu" style="width:220px;height:180px;">
+      <div class="container">
+        <h2>Oluwaseyi Ayo-Anjorin</h2>
+        <p class="title">Content Producer </p>
+        <p style="font-size:16px">I am a senior computer science major at Mcneese State University. I plan on specializing in software development in the fintech sector. I enjoy playing video games, playing sports, photography, music, and going to the gym. My favorite phrase is &quot;enjoy life when you can, problems never finish&quot;<p style="font-size:15px">msu-oayoanjorin@mcneese.edu</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="Images/veintidos.jpg" alt="Jan"style="width:220px;height:180px;">
+      <div class="container">
+        <h2>Jan Veintidos</h2>
+        <p class="title">Q/A Lead</p>
+        <p style="font-size:16px"> A Computer Science Student in his senior semeter of an undergraduate bachelor's degree. Enjoy helping solve difficult problems and being a team member!
+        </p>
+        <p style="font-size:14px">msu-jveintidos@mcneese.edu</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

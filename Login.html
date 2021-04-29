@@ -1,0 +1,59 @@
+
+
+<!--Author : Aman Khan
+    CSCI426 
+    project 2--->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- This section is for the login here -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Here</title>
+    <link rel="stylesheet" href="Styles/LoginStyle.css">
+</head>
+<body>
+    
+    <!--for the left section container -->
+    <section class="left-section">
+        <div id="left-cover" class="cover cover-hide">
+            <img src="Images/logo.png " alt="">
+            <h1></h1>
+            <h3>Welcome Back Here!</h3>
+            <button type="button" class="switch-btn" onclick="location.reload()">Login</button>
+        </div>
+        <div id="left-form" class="form fade-in-element">
+            <h1>Login Here !</h1>
+            <form action="login.php" method="post">
+                <input type="text" name="user-name" class="input-box" placeholder="User Name">
+                <input type="password" name="user-pass" class="input-box" placeholder="Password">
+                <input type="submit" name="login-btn" class="btn" value="Login">
+
+            </form>
+        </div>
+    </section>
+
+    <section class="right-section">
+        <div id="right-cover" class="cover fade-in-element">
+            <img src="Images/logo.png" alt="">
+           
+            <h3>Wanna Join ?</h3>
+            <button type="button" class="switch-btn" onclick="switchSignup()">Signup</button>
+        </div>
+        <div id="right-form" class="form form-hide">
+            <h1>Sign Up Here !</h1>
+            <form action="signup.php" method="post">
+                <input type="text" name="user-name" class="input-box" placeholder="User Name">
+                <input type="email" name="user-email" class="input-box" placeholder="Email">
+                <input type="password" name="user-pass" class="input-box" placeholder="Password">
+                <input type="submit" name="signup-btn" class="btn" value="Signup">
+            </form>
+        </div>
+    </section>
+
+    <script src="JavaScripts/main.js"></script>
+
+</body>
+</html>
+

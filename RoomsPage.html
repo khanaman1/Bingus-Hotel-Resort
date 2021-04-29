@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!-- 
+            Author:             Jan Veintidos
+            Assignment:         Project 1
+            Description:        Design the room selection page
+        -->
+        
+        <!--Tags for the page to have dimensions and english language-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        
+        <!--External CSS and Javascript files are here-->
+        <link rel="stylesheet" href="Styles/roomsPage.css">
+        <script type="text/javascript" src="JavaScripts/roomsPage.js"></script>
+        <link rel="stylesheet" href="Styles/navBarCss.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" scr="JavaScripts/jQRoomspage.js"></script>
+        
+        <!--tab txt-->
+        <title>Room Booking</title>
+         
+
+        
+    </head>
+
+
+    <!--Start of the body of the website-->
+    <body>
+         
+        <!--Navigation bar code starts here-->
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="About.html">About Us</a>
+            <a href="Contact.html">Contact</a>
+            <div class="dropdown">
+                <button class="dropbtn">Entertainment<i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="Restaurants.html">Restaurants</a>
+                    <a href="Casino.html">Casino</a>
+                </div>
+            </div>
+            <img id ="logo" src="Images/Logo.jpg" alt="compangy logo"> 
+        </div>
+
+        <div id="insideOfBody">
+            <div>
+                <!-- Rooms and pricing Section -->
+                <section id = "RoomsAndPricing">           
+                    <section id = "SingleRoom">
+                        <!--Here is an example of inline CSS-->
+                        
+                        <h2 style="padding-left: 9.5%;">Single Bed Luxury Style Bedroom</h2>
+                        <section id="luxLisiting">
+                            <img src="Images/luxury-hotel.jpg" alt="Single High End Bedroom Image" width="700" height="500">
+                            <ul class="luxUL">
+                                <li>Price per Night For Single Guest: $400.00</li><br><br>
+                                <li>Price per Night For Two Guest: $500.00</li><br><br>
+                                <li>Week Booking Flat Rate For One Guest: $1300.00</li><br><br>                    
+                                <li>Week Booking Flat Rate For Two Guest: $1400.00</li><br><br>
+                            </ul>
+                        </section> 
+                    </section>    
+                    <hr>            
+                    <section id= SingleRoom2>
+                        <!--Here is an example of inline CSS-->
+                        <h2 style="padding-left: 7%;">Single Bed Moderate Style Bedroom</h2>
+                        <section id="SingleBedModList">
+                            <img src="Images/singlebed.jpg" alt="Single Bed Room Image" width="700" height="500"> 
+                            <ul class="ListingPading">
+                                <li>Price per Night For Single Guest: $150.00</li><br><br>
+                                <li>Price per Night For Two Guest: $250.00</li><br><br>
+                                <li>Week Booking Flat Rate For One Guest: $600.00</li><br><br>                    
+                                <li>Week Booking Flat Rate For Two Or More Guest: $700.00</li><br><br>
+                            </ul> 
+                        </section>
+                    </section>
+                    <hr>
+                    <section id = DoubleRoomLux>
+                        <!--Here is an example of inline CSS-->
+                        <h2 style="padding-left: 12%;">Two Bed Luxury Style Bedroom</h2>
+                        <section id="Lux2BedListing">
+                            <img src="Images/HighEnd2Bedrooms.jpg" alt="Two High End Bedroom Image" width="700" height="500">
+                            <ul class="luxUL">
+                                <li>Price per Night For Single Guest: $200.00</li><br><br>
+                                <li>Price per Night For Two Or More Guest: $250.00</li><br><br>
+                                <li>Week Booking Flat Rate For One Guest: $800.00</li><br><br>                    
+                                <li>Week Booking Flat Rate For Two Or More Guest: $900.00</li><br><br>
+                            </ul> 
+                        </section>
+                    </section>
+                    <hr>
+                    <section id = DoubleRoom2>
+                        <!--Here is an example of inline CSS-->
+                        <h2 style="padding-left: 5%;">Two Bed Moderate Style Bedroom</h2>
+                        <section id="ModDoubleListing">
+                            <img src="Images/cheap2BedRooms.jpg" alt="2 Bed Room Image" width="700" height="500"> 
+                            <ul class="ListingPading">
+                                <li>Price per Night For Single Guest: $20.00</li><br><br>
+                                <li>Price per Night For Two Or More Guest: $30.00</li><br><br>
+                                <li>Week Booking Flat Rate For One Guest: $200.00</li><br><br>                    
+                                <li>Week Booking Flat Rate For Two Or More Guest: $250.00</li><br><br>
+                            </ul> 
+                        </section>            
+                    </section>
+                    <hr>
+                </section>
+                <!--end of the rooms and pricing display section-->
+            </div>
+            
+            <!--Code to do a slider for the warning notification for Covid done with jquery-->
+            <script>
+                $(document).ready(function(){
+                    $("#WarningSlider").click(function(){
+                        $("#CovidWarningMessage").slideToggle("slow");
+                    });
+                });
+
+            </script>
+
+
+
+            <!--Section that will use javascript to do a quick example cost out put for the guest to see-->
+            <div>
+                <form id="CalculationsArea">
+                    <!--Label slider that will show a warning about covid-->
+                    <h2 id="WarningSlider">NOTICE!! CLICK FOR MORE INFORMATION</h2>
+                    <h2 id ="CovidWarningMessage">Covid Warning! For Safety Reasons The Hotels/Resorts Is Currently Working At Half Capacity</h2>
+                    
+                        <!--Choose your room field set with 4 options-->
+                        <fieldset>
+                            <legend>Choose your room</legend>
+                            <label for="roomsLabel">Choose which rooms you would like to stay in <br> Check all that apply. </label>
+                            <br>    
+                            <input type="radio" id="SingleLuxBedChoice" name="BedChoice" value="SingleLuxBedChoice">
+                            <label for="SingleLuxBedChoice">Single Bed Luxury Bedroom</label>
+                            <br>    
+                            <input type="radio" id="SingleModBedChoice" name="BedChoice" value="SingleModBedChoice">
+                            <label for="SingleModBedChoice">Single Bed Moderate Style Bedroom</label>
+                            <br>    
+                            <input type="radio" id="DoubleLuxChoice" name="BedChoice" value="DoubleLuxChoice">
+                            <label for="DoubleLuxChoice">Two Bed Luxury Style Bedroom</label>
+                            <br>    
+                            <input type="radio" id="DoubleModChoice" name="BedChoice" value="DoubleModChoice">
+                            <label for="DoubleModChoice">Two Bed Moderate Style Bedroom</label>
+                        </fieldset>
+
+                        <!-- The type of booking information pick area -->
+                        <fieldset>
+                            <legend>Choose your Type of Booking</legend>
+                            <label for="roomsLabel">Choose which Type of Booking for the Rooms  <br> Check all that apply. </label>
+                            <br>    
+                            <input type="radio" id="booking1" name="BookChoice" value="booking1">
+                            <label for="booking1">For Single Guest</label>
+                            <br>    
+                            <input type="radio" id="booking2" name="BookChoice" value="booking2">
+                            <label for="booking2">For 2 or More</label>
+                            <br>    
+                            <input type="radio" id="booking3" name="BookChoice" value="booking3">
+                            <label for="booking3">Week Booking For One Guest</label>
+                            <br>    
+                            <input type="radio" id="booking4" name="BookChoice" value="booking4">
+                            <label for="booking4">Week Booking For Two or More Guest</label>
+                        </fieldset>
+
+                        <!-- This is were the user will enter their information for booking out the roo-->
+                        <fieldset>
+                            <legend>Enter Information for rooms</legend>
+                            <label for="guestInfo">Enter Name For Room</label> 
+                            <br>
+                            <input type="text" id ="guestName" name="guestName">
+                            <br>
+                            <label for="amountRoom">Enter How Many Rooms of This Type You Want To Reserve </label> 
+                            <br>
+                            <input type="text" id ="amountRoom" name="amountRoom">
+                            <br>
+                            <label for="contactInfo">Enter A Phone Number </label> 
+                            <br>
+                            <input type="text" id ="contactInfo" name="contactInfo">
+                        </fieldset>
+                    </form>
+                </div>
+                <br>
+
+                <div>
+                    <button id ="calPriceButton" type="button" onclick="roomPrices()">Get Total for Room </button><br><br>
+                    <button id ="clear" type="button" onclick="clearPage()">Clear</button>
+                </div>
+        </div>                
+    </body>
+
+    <footer>
+        
+    </footer>
+</html>
